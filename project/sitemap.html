@@ -1,0 +1,116 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>דירה להסביר -מפת האתר</title>
+    <meta name="description" content="דירה להסביר - המדריך לחיים עצמאיים - מפת האתר" />
+    <meta name="keywords" content="דירה, רוצה לעבור לגור לבד, לעזוב את הבית, שותפים, חיים עצמאיים, מגורים לבד, שכירות" />
+    <meta name="author" content="עדי שלו, יהודר שוץ, איה קפלן" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">  
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+</head> 
+<body onload="tab_nav()">
+    <div id="grassback"></div> 
+    <a id="skip_to" href="#skiphere">לחצו enter <br /> לדילוג לתוכן</a> 
+    <div  id="container">
+      
+        <header>
+            <div class="headr_div">
+                <div id="logo">
+                    <a href="#" id="logo_a" onclick="playdorbell();">
+                        <p id="logo_text1">דירה להסביר</p>
+                        <p id="logo_text2">המדריך לחיים עצמאיים</p>
+                        <p id="logo_text3">מרגע המעבר ועד למגורים עצמם</p>
+                    </a>
+                </div>
+
+                <!--תפריט ניווט שמאלי אודות וכאלה-->
+                <nav id="header_left_nav">
+                    <ul>
+                        <li><a href="about.html">אודות</a></li>
+                        <li><a href="contactUs.html">צרו קשר</a></li>
+                        <li><a href="siteMap.html">מפת האתר</a></li>
+                    </ul>
+                </nav>
+
+                <!--תפריט ניווט ימני טאבים-->
+                <nav id="header_right_nav">
+                    <ul>
+                        <li>
+                            <a href="‏‏s1_lobby.html">כבר שוכרים דירה</a>
+                            <ul>
+                                <li><a href="#" class="inactive" tabindex="-1">בירוקרטיה בקלות</a></li>
+                                <li><a href="#" class="inactive" tabindex="-1">עניין של כסף</a></li>
+                                <li><a href="#" class="inactive" tabindex="-1">בדוק שצריך תחזוק</a></li>
+                                <li><a href="#">שמח במטבח</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="s2_lobby.html">עדיין לא שוכרים דירה</a>
+                            <ul>
+                                <li><a href="#" class="inactive" tabindex="-1">אמא'לה, חוזה שכירות</a></li>
+                                <li><a href="#" class="inactive" tabindex="-1">תחזית הכסף</a></li>
+                                <li><a href="s2_warning.html">פה חשדתי</a></li>
+                                <li><a href="‏‏s2_dilemma.html">הקו למתלבט</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                   </div>
+</header>
+<!--החלק הארי של דף האודות-->
+<article id="sitemap_main">
+  
+<h1>מפת האתר*</h1>
+
+    <ul id="sitemap_ul">
+        <li>
+            <h3><a href="‏‏s1_lobby.html"  id="skiphere">כבר שוכרים דירה</a></h3>
+            <ul>
+                <li>בירוקרטיה בקלות</li>
+                <li>עניין של כסף</li>
+                <li>בדוק שצריך תחזוק</li>
+                <li><a href="#" class="devopled_page">שמח במטבח</a></li>
+            </ul>
+        </li>
+        <li>
+            <h3><a href="s2_lobby.html">עדיין לא שוכרים דירה</a></h3>
+            <ul>
+                <li>אמא'לה חוזה שכירות</li>
+                <li>תחזית הכסף</li>
+                <li><a href="s2_warning.html" class="devopled_page">פה חשדתי</a></li>
+                <li><a href="‏‏s2_dilemma.html" class="devopled_page">הקו למתלבט</a></li>
+            </ul>
+        </li>
+        <li>
+            <h3>נלווים</h3>
+            <ul>
+                
+                <li><a href="about.html" class="devopled_page">אודות</a></li>
+                <li><a href="sitemap.html" class="devopled_page">מפת אתר</a></li>
+                <li><a href="contactus.html" class="devopled_page">צור קשר</a></li>
+                <li style="visibility:hidden;"></li>
+            </ul>
+            
+
+        </li>
+        </ul>   
+<p>*האתר נבנה במסגרת פרויקט לימודי ופותח באופן חלקי,  לנוחיותכם העמודים שפותחו מודגשים בצבע שחור0</p>
+</article>
+<footer id="about_footer">
+     <a href="http://www.hit.ac.il/telem/overview" target="_blank">הפקולטה לטכנולוגיות למידה</a>
+       <img src="images/hitlogo3.png" />
+</footer>
+   
+     </div>
+
+    <div id="grassfront"></div>
+</body>
+</html>

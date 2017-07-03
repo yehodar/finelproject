@@ -1,0 +1,373 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>דירה להסביר -פה חשדתי</title>
+    <meta name="description" content="דירה להסביר - המדריך לחיים עצמאיים - פה חשדתי" />
+    <meta name="keywords" content=", בעל הדירה, סימני אזהרה,דירה, רוצה לעבור לגור לבד, לעזוב את הבית, שותפים, חיים עצמאיים, מגורים לבד, שכירות" />
+    <meta name="author" content="עדי שלו, יהודר שוץ, איה קפלן" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">  
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> 
+       <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+    <!--חיווי גלילה בתפריט ניווט צידי לפי התקדמות בתוכן-->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 50 && $(document).scrollTop() <2250) {
+                    $("#waside_nav_1").addClass("scrollnow");
+                } else {
+                    $("#waside_nav_1").removeClass("scrollnow");
+                }
+
+                if ($(document).scrollTop() > 2250 && $(document).scrollTop() < 2900) {
+                    $("#waside_nav_2").addClass("scrollnow");
+                } else {
+                    $("#waside_nav_2").removeClass("scrollnow");
+                }
+
+                if ($(document).scrollTop() > 2900 && $(document).scrollTop() < 4350) {
+                    $("#waside_nav_3").addClass("scrollnow");
+                } else {
+                    $("#waside_nav_3").removeClass("scrollnow");
+                }
+                if ($(document).scrollTop() > 4350 && $(document).scrollTop() < 5450) {
+                    $("#waside_nav_4").addClass("scrollnow");
+                } else {
+                    $("#waside_nav_4").removeClass("scrollnow");
+                }
+
+            });
+        });
+    </script>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+</head> 
+<body onload="tab_nav()">
+    <div id="grassback"></div> 
+    <a id="skip_to" href="#waside_nav_1">לחצו enter <br /> לדילוג לתוכן</a> 
+    <div  id="container">
+  
+        <header>
+            <div class="headr_div">
+                <div id="logo">
+                    <a href="#" id="logo_a" onclick="playdorbell();">
+                        <p id="logo_text1">דירה להסביר</p>
+                        <p id="logo_text2">המדריך לחיים עצמאיים</p>
+                        <p id="logo_text3">מרגע המעבר ועד למגורים עצמם</p>
+                    </a>
+                </div>
+
+                <!--תפריט ניווט שמאלי אודות וכאלה-->
+                <nav id="header_left_nav">
+                    <ul>
+                        <li><a href="about.html">אודות</a></li>
+                        <li><a href="contactUs.html">צרו קשר</a></li>
+                        <li><a href="siteMap.html">מפת האתר</a></li>
+                    </ul>
+                </nav>
+
+                <!--תפריט ניווט ימני טאבים-->
+                <nav id="header_right_nav">
+                    <ul>
+                        <li>
+                            <a href="‏‏s1_lobby.html">כבר שוכרים דירה</a>
+                            <ul>
+                                <li><a href="#" class="inactive" tabindex="-1">בירוקרטיה בקלות</a></li>
+                                <li><a href="#" class="inactive" tabindex="-1">עניין של כסף</a></li>
+                                <li><a href="#" class="inactive" tabindex="-1">בדוק שצריך תחזוק</a></li>
+                                <li><a href="#">שמח במטבח</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="s2_lobby.html">עדיין לא שוכרים דירה</a>
+                            <ul>
+                                <li><a href="#" class="inactive" tabindex="-1">אמא'לה, חוזה שכירות</a></li>
+                                <li><a href="#" class="inactive" tabindex="-1">תחזית הכסף</a></li>
+                                <li><a href="s2_warning.html">פה חשדתי</a></li>
+                                <li><a href="‏‏s2_dilemma.html">הקו למתלבט</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+</div>
+</header>
+        <nav class="breadcrumbs">
+            <ul>
+                <li><a href="index.html">דף הבית</a></li>
+                <li><a href="s2_lobby.html">עדיין לא שוכרים דירה</a></li>
+                <li>פה חשדתי</li>
+            </ul>
+        </nav> 
+<!--החלק הארי של דף התוכן-->
+<div class="innerpage_right_menu">
+
+    <!--קופסא 3 - פה חשדתי-->
+   
+        <div id="s2_lobby_box3_topic"><a href="#logo" style="text-decoration:none;"><div class="orangelower">פה <br /> חשדתי</div></a></div>
+        
+    
+    <nav class="s2_warning_nav">
+        <ul>
+            <li><a href="#warning_appartment_h2" id="waside_nav_1">בדירה</a></li>
+            <li><a href="#warning_around_h2" id="waside_nav_2">סביבת הדירה</a></li>
+            <li><a href="#warning_roomates_h2" id="waside_nav_3">שותפים</a></li>
+            <li><a href="#warning_landlord_h2" id="waside_nav_4">בעל\ת הדירה</a></li>
+        </ul>
+    </nav>
+</div>
+<article class="innerpage_main">
+ 
+<h1>פה חשדתי - סימני אזהרה</h1>
+    <p>תהליך חיפוש הדירה ארוך ומבלבל, בין בחירת השותפים, לבחירת הדירה וליחסים עם בעל הבית, צריך לשים לב לכמה דברים חשובים. מה צריך להדליק לכם "נורת אזהרה"?</p>
+
+    <!--סימני אזהרה בדירה-->
+ <h2 id="warning_appartment_h2">בדירה</h2>
+    <ul class="innerpage_list" >
+        <li><h3>צנרת ואינסטלציה</h3>
+        <p class="innerpage_list_p">חפשו סימני רטיבות, הפעילו את ברזי המים, בדקו ריקבון בקירות, לחץ מים. מומלץ לבדוק בעזרת בעל מקצוע. </p>
+    <img src="images/warning/warning_1.jpg" alt="תמונה של סימני רטיבות ונזקי ריקבון בקיר כדי להמחיש למשתמש"/>
+        </li>
+        <li>
+            <h3>סורגים ומנעולים</h3>
+            <p class="innerpage_list_p">בדקו את סוגי המנעולים שעל הדלתות, ודאו שהם בטיחותיים ולא קלים לפריצה. ניתן להתייעץ עם מנעולן. </p>
+            <img src="images/warning/warning_2.jpg" alt="תמונה הממחישה סורגים לחלון" />
+        </li>
+        <li>
+            <h3>דוד שמש/חשמל</h3>
+            <p class="innerpage_list_p">בדקו אם יש לבניין דוד משותף או שיש דוד ששייך רק לדירה. בדקו את תקינות הדוד. </p>
+            <img src="images/warning/warning_3.jpg" alt="תמונה של דודי חשמל להמחשה"/>
+        </li>
+        <li>
+            <h3>מטבח</h3>
+            <p class="innerpage_list_p">
+               בדקו את ארונות מטבח לראות שהם תקינים ולא רקובים, גז תקין, שקעי חשמל לפי הצורך שלכם.
+                </p>
+            <img src="images/warning/warning_4.jpg" alt="תמונה של מטבח להמחשה עם כל כלי המטבח"/>
+        </li> 
+        <li>
+            <h3>תאורה</h3>
+            <p class="innerpage_list_p">
+                בדקו שהתאורה תקינה ומספיקה בכל החללים בבית.            </p>
+            <img src="images/warning/warning_5.jpg" alt=">תמונה של שתי מנורות להמחשבה"/>
+        </li> 
+        <li>
+            <h3>תריסים וחלונות</h3>
+            <p class="innerpage_list_p">
+                בדקו האם התריסים שלמים ותקינים.
+            </p>
+            <img src="images/warning/warning_6.jpg" alt="תמונה של אדם מסתכל על חלון עם תריסים להמחשה"/>
+        </li> 
+        <li>
+            <h3>מזגן</h3>
+            <p class="innerpage_list_p">
+                ודאו שהמזגן עובד ואין תקלות.
+            </p>
+            <img src="images/warning/warning_7.jpg" alt="תמונה של אדם מחזיק שלט מזגן לפני מזגן להמחשה"/>
+        </li>   
+        <li>
+            <h3>סיוד</h3>
+            <p class="innerpage_list_p">
+    בדקו האם יש אזורים בדירה שזקוקים לסיוד
+            </p>
+            <img src="images/warning/warning_8.jpg" alt="תמונה של שכפטל על קיר להמחשה של סיוד" />
+        </li>  
+        <li>
+            <h3>ריצוף</h3>
+            <p class="innerpage_list_p">
+בדקו שאין מרצפות שבורות
+                        </p>
+            <img src="images/warning/warning_9.jpg" alt="תמונה של מרצפות שבורות להמחשה ולזיהוי" />
+        </li>    
+    </ul>
+    <h3 class="h3_black">בואו נרחיב, צפו בסרטון של  קוד השכירות:</h3>
+    <iframe title="סרטון של קוד השכירות" class="youtube_video" alt="סרטון של פרויקט קוד השכירות בה הדמות מסבירה על הקרבה לים וממחישה סיטואציה של חיפוש דירה" width="560" height="315" src="https://www.youtube.com/embed/OYnpt9CjdUA" frameborder="0" allowfullscreen></iframe>
+    <p><a href="http://www.rentcode.org/" target="_blank" class="kredit">לחצו כאן למעבר לאתר של פרויקט קוד השכירות ></a></p>
+
+
+
+<h2>דגשים חשובים</h2>
+
+    <h3>חוזה שכירות</h3>
+    <ul class="innerpage_list_regular">
+        <li>
+            <p>יש לציין בחוזה הדירה מי אחראי לתיקון הציוד בדירה (כמו מזגן, צנרת, דוד, מקרר וכו') ומהו מקסימום משך הזמן עד לביצוע התיקון (לדוגמא: עד 48 שעות).</p>
+        </li>
+        <li>
+            <p>סעיף "למעט מום או בלאי נסתרים" בחוזה (פגמים שהשוכר לא יכול היה לשים לב אליהם, כמו צנרת רקובה) נועד למנוע מצב שבו בעל הדירה יסרב לבצע את התיקון הנדרש.אם לא יהיה סעיף זה בחוזה, כל דבר לא תקין שאתם לא תראו בהתחלה עלול לשמש נגדכם בעתיד.</p>
+        </li>
+        <li>
+            <p>חשוב לציין - בדר"כ בעל הדירה אחראי לתיקונים, אך חובתו של הדייר לדאוג לתחזוקה השוטפת.</p>
+        </li>
+    </ul>
+    <img class="warning_contractimg" src="images/warning/warning_10.jpg" alt="תמונה של חתימה על חוזה להמחשה" />
+
+    <h3>כללי</h3>
+    <ul class="innerpage_list_regular">
+        <li>
+            <p>חשוב לברר את שנת הבנייה. מבנים שנבנו עד שנות ה-70 אינם עומדים בתקן בטיחות ומבנה ישן בדר"כ ידרוש תחזוקה גבוהה יותר ומחיר השכירות צריך להיות בהתאם.</p>
+        </li>
+        <li>
+            <p>דרשו הדברה וניקוי לפני הכניסה לדירה.</p>
+        </li>
+        <li>
+            <p>בדקו איזה ריהוט ואילו מכשירים חשמליים נשארים בדירה ואיזה דברים אתם צריכים לקנות.</p>
+        </li>
+        <li>
+            <p>הגיעו לדירה עם מישהו שייתן חוות דעת שניה ואולי יבחין בליקויים שאתם התעלמתם מהם.</p>
+        </li>
+    </ul>
+    <img class="warning_contractimg" src="images/warning/warning_10_2.jpg"  alt="תמונה של בניין ישן ליד בניין חדש להמחשה"/>
+
+    <!--סימני אזהרה בסביבת הדירה-->
+    <h2 id="warning_around_h2">סביבת הדירה</h2>
+    <ul class="innerpage_list">
+        <li>
+            <h3>סופרמרקט</h3>
+            <p class="innerpage_list_p">
+                חשוב לבדוק אם יש סופר בקרבת מקום בשביל הנוחות שלכם.
+            </p>
+            <img src="images/warning/warning_11.jpg" alt="תמונה פנימית של סופרמרקט, עם הרבה מדפים ומוצרים, להמחשה"/>
+        </li>
+        <li>
+            <h3>תחבורה ציבורית</h3>
+            <p class="innerpage_list_p">
+                וודאו כי יש באזור הדירה תחבורה ציבורית המתאימה לצרכים שלכם            </p>
+            <img src="images/warning/warning_12.jpg" alt="תמונה של תחנת אוטובוס להמחשה"/>
+        </li>
+        <li>
+            <h3>קופת חולים</h3>
+            <p class="innerpage_list_p">
+                וודאו כי אתם יכולים לקבל שירותי רפואה בקרבת הדירה.
+            </p>
+            <img src="images/warning/warning_13.jpg" alt="תמונה של קופת חולים כללית להמחשה"/>
+        </li>
+        <li>
+            <h3>מטרדי רעש</h3>
+            <p class="innerpage_list_p">
+                בקרו באזור הדירה בשעות שונות של היום ובדקו האם יש מטרדי רעש.
+            </p>
+            <img src="images/warning/warning_14.jpg" alt="תמונה של אזור בנייה להדגמת מטרד רעש"/>
+        </li>
+        <li>
+            <h3>בעלי רכב</h3>
+            <p class="innerpage_list_p">
+                בדקו מהו הקושי למצוא חניה באזור הדירה, בעיקר בשעות העומס.            </p>
+            <img src="images/warning/warning_15.jpg" alt="תמונה של חניון עם מכוניות חונות להמחשה"/><div class="imglink_div"><a href="http://www.freepik.com/free-photo/parking-lot_356503.htm#term=a lot people&page=1&position=15" target="_blank" class="imglink_a">Margan Zajdowicz©</a></div>
+        </li>
+    </ul>
+
+    <!--סימני אזהרה בשותפים-->
+    <h2 id="warning_roomates_h2">שותפים</h2>
+    <ul class="innerpage_list">
+        <li>
+            <h3>מין השותפים</h3>
+            <p class="innerpage_list_p">
+                חשוב שתשאלו את עצמכם עם איזה מין אתם מסתדרים יותר טוב ועם איזה מין יש לנו נושאי שיחה משותפים.
+            </p>
+            <img src="images/warning/warning_16.jpg" alt="תמונה של סמלי מגדר"/><div class="imglink_div"><a href="http://www.freepik.com/free-vector/gender-icon-stickers_764683.htm" target="_blank" class="imglink_a">Freepik©</a></div>
+        </li>
+        <li>
+            <h3>מספר השותפים</h3>
+            <p class="innerpage_list_p">
+                יותר שותפים זה עלות נמוכה יותר בשכירות אבל איכות החיים יורדת בהתאם. תחשבו מהו מספר שותפים שעליו אתם מוכנים להתפשר.
+            </p>
+            <img src="images/warning/warning_17.jpg" alt="תמונה של הרבה דמויות צפופות" /><div class="imglink_div"><a href="http://www.freepik.com/free-vector/pattern-of-happiness-and-sadness_839173.htm" target="_blank" class="imglink_a">Freepik©</a></div>
+        </li>
+        <li>
+            <h3>אורח חיים</h3>
+            <p class="innerpage_list_p">
+                חישבו מה הוא אורך החיים שלכם (ברמנית שעובדת לילות או סטודנט) ווודאו שהשותפים שלכם מתאימים לאורך החיים שלכם.
+            </p>
+            <img src="images/warning/warning_18.jpg" alt="תמונה של שלוש דמויות שונות המסמלות אורח חיים שונה"/><div class="imglink_div"><a href="http://www.freepik.com/free-vector/teenage-girls-in-different-clothing-styles-character-pack-vector-illustration_1158143.htm" target="_blank" class="imglink_a">Freepik©</a></div>
+        </li>
+        <li>
+            <h3>תכונות</h3>
+            <p class="innerpage_list_p">
+                חישבו מה מפריע לכם, עם איזה אנשים תסתדרו בצורה טובה ואילו תכונות חשוב לכם שיהיו לשותפים (יושרה, פתיחות וכד').
+            </p>
+            <img src="images/warning/warning_19.jpg" alt="איור של אדם כועס" /><div class="imglink_div"><a href="http://www.freepik.com/free-vector/upset-worker_834552.htm" target="_blank" class="imglink_a">Freepik©</a></div>
+        </li>
+        <li>
+            <h3>גבולות</h3>
+            <p class="innerpage_list_p">
+                בדקו מה היא עמדתכם בנושאים שונים כמו- עישון, בעלי חיים, הרגלי ניקיון, כשרות ועוד דברים שיהוו עבורכם קו אדום.
+            </p>
+            <img src="images/warning/warning_20.jpg" alt="איור של סרטי אזהרה צהובים כמו של משטרה"/><div class="imglink_div"><a href="http://www.freepik.com/free-vector/caution-yellow-tapes_837163.htm#term=caution&page=1&position=2" target="_blank" class="imglink_a">Freepik©</a></div>
+        </li>
+        <li>
+            <h3>גיל השותפים</h3>
+            <p class="innerpage_list_p">
+                בנוסף לאורח חיים דומה, בחרו בשותף בגיל דומה לשלכם. פערי גילאים משמעותיים יכולים ליצור בעיות וחיכוכים.
+            </p>
+            <img src="images/warning/warning_21.jpg" alt="איור של אנשים זקנים" /><div class="imglink_div"><a href="http://www.freepik.com/free-vector/old-people-illustration_835663.htm" target="_blank" class="imglink_a">Freepik©</a></div>
+        </li>
+        <li>
+            <h3>בני זוג</h3>
+            <p class="innerpage_list_p">
+                בדקו האם לשותפים שלכם יש בני זוג, מה התדירות שהם נמצאים בדירה.
+            </p>
+            <img src="images/warning/warning_22.jpg" alt="איור של זוג מאוהב רוכב על אופנוע עם רקע של לב" /><div class="imglink_div"><a href="http://www.freepik.com/free-vector/lovely-couple-riding-a-vespa_829594.htm" target="_blank" class="imglink_a">Freepik©</a></div>
+        </li>
+
+    </ul>
+    <h3>שאלות שכדאי לשאול שותפים פוטנציאלים</h3>
+    <ul class="innerpage_list_regular">
+        <li><p>איך נראה יום טיפוסי שלך?</p></li>
+        <li><p>במה את\ה עוסק? האם יש לך עיסוקים נוספים או תחביבים? </p></li>
+        <li><p>האם יש לך בן\בת זוג והאם אתם מבלים הרבה בדירה?</p></li>
+        <li><p>האם השותפים בדירה נוהגים לארח חברים לעיתים קרובות?</p></li>
+        <li><p>האם יש לך מקור הכנסה יציב כדי לשלם את שכר הדירה?</p></li>
+        </ul>
+
+    <!--סימני אזהרה - בעל הדירה-->
+    <h2 id="warning_landlord_h2">בעל\ת הדירה</h2>
+    <p>אחרי שסיימתם לבחון את הדירה עצמה, צריך לבדוק גם אם בעל הדירה מתאים לכם!
+<br />הנה כמה נקודות חשובות שאתם צריכים לשים לב אליהן:</p>
+     <ul class="innerpage_list_regular">
+        <li><p>האם משכיר הדירה הוא אכן בעל הדירה או מיופה כוח מטעמו ע"י נוסח הטאבו</p></li>
+        <li><p>אופן ביצוע התשלומים: מראש או כל חודש</p></li>
+        <li><p>האם המשכיר נראה אמין</p></li>
+        <li><p>האם המשכיר מגיע לביקורים בדירה בהפתעה ובלי הודעה מראש</p></li>
+        <li><p>באיזה תדירות מתחלפים הדיירים בדירה ולמה</p></li>
+        <li><p>האם הוא מבצע תיקונים דרושים במהירות או שהוא לוקה ב"סחבת"</p></li>
+        <li><p>האם בעל הדירה מתגורר קרוב לדירה</p></li>
+        <li><p>איך האופי והרושם הראשוני שלו: האם הוא  נראה נחמד והאם נוח לדבר אתו ולשאול שאלות</p></li>
+    </ul>
+    <img class="warning_contractimg" src="images/warning/warning_23.jpg" alt="תמונה של שני אנשים לוחצים ידיים " />
+    <p>מומלץ לדבר עם דיירים קודמים ושכנים כדי לשמוע מהם על בעל הדירה.  כאשר תפגשו את בעל הדירה, יכול להיות שהוא ישאל שאלות לא רלוונטיות.  זכרו, מדובר בנכס שלו וחשוב לו לדעת מי עתיד לגור בו (כמובן כאשר אלו שאלות על גבול הטעם הטוב).</p>
+    <br />
+    <h3 class="h3_black">רוצים להרחיב עוד קצת? צפו בסרטונים של קוד השכירות:</h3>
+    <iframe title="סרטון של פרויקט קוד השכירות" class="youtube_video" alt="סרטון של פרויקט קוד השכירות" width="560" height="315" src="https://www.youtube.com/embed/ydxd4dzm5Bw" frameborder="0" allowfullscreen></iframe>
+    <iframe title="פרויקט של סרטון קוד השכירות" class="youtube_video" alt="סרטון של פרויקט קוד השכירות" width="560" height="315" src="https://www.youtube.com/embed/0Vwg9abLUzw" frameborder="0" allowfullscreen></iframe>
+    <p><a href="http://www.rentcode.org/" target="_blank" class="kredit">לחצו כאן למעבר לאתר של פרויקט קוד השכירות ></a></p>
+
+    <aside>
+        <h2>קראו עוד >></h2>
+        <div class="innerpage_flood" id="innerpage_flood_first">
+
+            <img src="images/warning/‏‏warning_24.jpg" alt="תמונה של חתימה על חוזה" />
+            <img src="images/buttons/b2_2.svg" class="innerpage_flood_topimg" />
+            <p>מצאתם דירה מהממת עם אחלה בעל דירה ושותפים? <br /><a href="notdevolped.html">בואו נחתום על חוזה >></a></p>
+
+        </div>
+        <div class="innerpage_flood">
+            <img src="images/warning/‏‏warning_25.jpg" alt="איור של שטרות, ארנק וכרטיס אשראי" />
+            <img src="images/buttons/b2_1.svg" class="innerpage_flood_topimg" />
+            <div class="imglink_div"><a href="http://www.freepik.com/free-vector/background-of-businessman-with-banknotes-and-credit-card_1147359.htm#term=money&page=1&position=8" target="_blank" class="imglink_a">Freepik©</a></div>
+            <p>דירה, שותפים, אבל איך מתמודדים עם ניהול של כסף? <br /><a href="notdevolped.html">בואו נדבר תקציב >></a></p>
+
+        </div>
+    </aside>
+
+</article>
+   
+     </div>
+
+    <div id="grassfront"></div>
+</body>
+</html>

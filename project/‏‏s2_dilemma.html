@@ -1,0 +1,297 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>דירה להסביר -הקו למתלבט</title>
+    <meta name="description" content="דירה להסביר - המדריך לחיים עצמאיים - הקו למתלבט" />
+    <meta name="keywords" content="דירה, רוצה לעבור לגור לבד, לעזוב את הבית, שותפים, חיים עצמאיים, מגורים לבד, שכירות" />
+    <meta name="author" content="עדי שלו, יהודר שוץ, איה קפלן" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">  
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> 
+       <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+    <!--חיווי גלילה בתפריט ניווט צידי לפי התקדמות בתוכן-->
+    <script>
+        
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($('#dilemma_budget_table').css('display') == 'none')
+                {
+                if ($(document).scrollTop() > 50 && $(document).scrollTop() <501) {
+                    $("#daside_nav_1").addClass("scrollnow");
+                } else {
+                    $("#daside_nav_1").removeClass("scrollnow");
+                }
+
+                if ($(document).scrollTop() > 500 && $(document).scrollTop() < 1200 ) {
+                    $("#daside_nav_2").addClass("scrollnow");
+                } else {
+                    $("#daside_nav_2").removeClass("scrollnow");
+                }
+
+                if ($(document).scrollTop() >1200 && $(document).scrollTop() < 1700) {
+                    $("#daside_nav_3").addClass("scrollnow");
+                } else {
+                    $("#daside_nav_3").removeClass("scrollnow");
+                }
+                if ($(document).scrollTop() > 1700 && $(document).scrollTop() < 1950) {
+                    $("#daside_nav_4").addClass("scrollnow");
+                } else {
+                    $("#daside_nav_4").removeClass("scrollnow");
+                }
+                }
+                else {
+                    if ($(document).scrollTop() > 50 && $(document).scrollTop() < 1500) {
+                        $("#daside_nav_1").addClass("scrollnow");
+                    } else {
+                        $("#daside_nav_1").removeClass("scrollnow");
+                    }
+
+                    if ($(document).scrollTop() > 1500 && $(document).scrollTop() < 2200) {
+                        $("#daside_nav_2").addClass("scrollnow");
+                    } else {
+                        $("#daside_nav_2").removeClass("scrollnow");
+                    }
+
+                    if ($(document).scrollTop() > 2200 && $(document).scrollTop() < 2750) {
+                        $("#daside_nav_3").addClass("scrollnow");
+                    } else {
+                        $("#daside_nav_3").removeClass("scrollnow");
+                    }
+                    if ($(document).scrollTop() > 2749 && $(document).scrollTop() < 3100) {
+                        $("#daside_nav_4").addClass("scrollnow");
+                    } else {
+                        $("#daside_nav_4").removeClass("scrollnow");
+                    }
+                }
+            });
+        });
+       
+    </script>
+
+
+        
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+</head> 
+<body onload="tab_nav()">
+    <div id="grassback"></div> 
+    <a id="skip_to" href="#daside_nav_1">לחצו enter <br /> לדילוג לתוכן</a> 
+    <div  id="container">
+  
+        <header>
+            <div class="headr_div">
+                <div id="logo">
+                    <a href="#" id="logo_a" onclick="playdorbell();">
+                        <p id="logo_text1">דירה להסביר</p>
+                        <p id="logo_text2">המדריך לחיים עצמאיים</p>
+                        <p id="logo_text3">מרגע המעבר ועד למגורים עצמם</p>
+                    </a>
+                </div>
+
+                <!--תפריט ניווט שמאלי אודות וכאלה-->
+                <nav id="header_left_nav">
+                    <ul>
+                        <li><a href="about.html">אודות</a></li>
+                        <li><a href="contactUs.html">צרו קשר</a></li>
+                        <li><a href="siteMap.html">מפת האתר</a></li>
+                    </ul>
+                </nav>
+
+                <!--תפריט ניווט ימני טאבים-->
+                <nav id="header_right_nav">
+                    <ul>
+                        <li>
+                            <a href="‏‏s1_lobby.html">כבר שוכרים דירה</a>
+                            <ul>
+                                <li><a href="#" class="inactive" tabindex="-1">בירוקרטיה בקלות</a></li>
+                                <li><a href="#" class="inactive" tabindex="-1">עניין של כסף</a></li>
+                                <li><a href="#" class="inactive" tabindex="-1">בדוק שצריך תחזוק</a></li>
+                                <li><a href="#">שמח במטבח</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="s2_lobby.html">עדיין לא שוכרים דירה</a>
+                            <ul>
+                                <li><a href="#" class="inactive" tabindex="-1">אמא'לה, חוזה שכירות</a></li>
+                                <li><a href="#" class="inactive" tabindex="-1">תחזית הכסף</a></li>
+                                <li><a href="s2_warning.html">פה חשדתי</a></li>
+                                <li><a href="‏‏s2_dilemma.html">הקו למתלבט</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+</div>
+</header>
+        
+        <!--תפריט פיררי לחם-->
+        <nav class="breadcrumbs">
+            <ul>
+                <li><a href="index.html">דף הבית</a></li>
+                <li><a href="s2_lobby.html">עדיין לא שוכרים דירה</a></li>
+                <li>הקו למתלבט</li>
+            </ul>
+        </nav> 
+<!--החלק הארי של דף התוכן-->
+
+
+<div class="innerpage_right_menu">
+
+    <!--קופסא 4- הקו למתלבט-->
+   
+        <div id="s2_lobby_box4_topic"><a href="#logo" style="text-decoration:none;"><div class="orangelower">הקו <br /> למתלבט</div></a></div>
+        
+    
+    <nav class="s2_warning_nav">
+        <ul>
+            <li><a href="#dilemma_budget_h2" id="daside_nav_1">תקציב</a></li>
+            <li><a href="#dilemma_roomates_h2" id="daside_nav_2">שותפים\זוג</a></li>
+            <li><a href="#dilemma_independents_h2" id="daside_nav_3">חיים עצמאיים</a></li>
+            <li><a href="#dilemma_serounding_h2" id="daside_nav_4">סביבה</a></li>
+        </ul>
+    </nav>
+</div>
+<article class="innerpage_main" id="s2_dilemma_page">
+ 
+<h1>הקו למתלבט</h1>
+    <p>אתם מרגישים רצון לעזוב את בית המשפחה ולגור בעצמאות אבל לא בטוחים אם יש לכם את הכלים והיכולות לכך. הנה מספר דברים שיעזרו לכם להבין האם אתם מוכנים לביצוע המעבר: </p>
+
+    <!--תקציב-->
+ <h2 id="dilemma_budget_h2">תקציב: האם אני מוכן לזה כלכלית? </h2>
+  <div class="div_inline">
+    <p>אתם לא רוצים להגיע למצב שבו מצאתם דירה מקסימה, עברתם ואחרי כמה חודשים אתם מבינים שאין לכם אפשרות לשלם את שכר הדירה והחשבונות ואז מתחילות הבעיות. וודאו שיש לכם את התקציב המתאים ואת העבודה המתאימה שתעזור לכם לכסות את ההוצאות בלי בעיות.</p>
+      <p>התקציב מתחלק ל-2:</p>
+      <ul class="reg_list">
+          <li><p><b>תקציב מעבר דירה: </b>הובלות, מוצרים, מכשירים וריהוט שצריך לקנות לדירה.</p></li>
+          <li><p><b>תקציב שוטף: </b>שכירות, חשבונות, ארנונה.</p></li>
+      </ul>
+  </div> 
+       <img src="images/dilemma/dilemma_1.jpg" class="dilemma_pic" alt="איור של חשבונות ודוגמאות להוצאות כמו רכב, בילויים, בית"/>
+    <div class="imglink_div"><a href="http://www.freepik.com/free-vector/bills-payment-designs_1023967.htm" target="_blank" class="imglink_a" id="a1">Freepik©</a></div>
+    <br />
+
+    <h3><a href="#dilemma_budget_table" onclick="opentable()" id="opentable_link"><i class="fa fa-chevron-circle-down" aria-hidden="true" id="icon2"></i><i class="fa fa-chevron-circle-left" aria-hidden="true" id="icon1"></i> לחצו כאן וגלו מה ההוצאות הנפוצות הצפויות לכם</a> </h3>
+
+
+<table id="dilemma_budget_table" alt="הוצאות שוטפות נפוצות במגורים עצמאיים בדירה שכורה" summary="הוצאות שוטפות נפוצות במגורים עצמאיים בדירה שכורה" >
+
+    <tr>
+        <th>הוצאה</th>
+        <th>פירוט</th>
+        <th>סכום ממוצע לחודש</th>
+    </tr>
+    <tr>
+        <th>שכר דירה</th>
+        <td>מדובר בהוצאה קבועה ואולי הכי כבדה. בערי מרכז כמו תל אביב וירושלים תשלמו שכ"ד משמעותית יקר יותר מאשר בערי פריפריה.  שכ"ד הממוצע בקריות נכון ל-2016 עומד על 2,380 ₪ בעוד שבת"א על 5,531 ₪, חשוב לבחור עיר מגורים בצורה מושכלת ומחושבת. </td>
+        <td headers="הוצאה ממוצעת בחודש על שכר דירה">2,000 ₪ </td>
+    </tr>
+    <tr>
+        <th>ארנונה</th>
+        <td>הוצאה קבועה אך משתנה מעיר לעיר. בדקו כמה עולה ארנונה בעיר בה אתם רוצים לגור. אם אתם סטודנטים או חיילים, ייתכן שמגיעה לכם הנחה בארנונה. </td>
+        <td headers="הוצאה ממוצעת בחודש על ארנונה">300 ₪</td>
+    </tr>
+    <tr>
+        <th>חשמל</th>
+        <td>הוצאה משתנה לפי אזור המגורים ורמת הצריכה. אם דיירי הבית נמצאים מעט בבית, חשבון החשמל יהיה נמוך משמעותית. </td>
+        <td headers="הוצאה ממוצעת בחודש על חשמל">100-200 ₪</td>
+    </tr>
+    <tr>
+        <th>אינטרנט</th>
+        <td>מי יכול לחיות בימינו בלי אינטרנט? עלות האינטרנט ירדה בשנים האחרונות ולכן מדובר בהוצאה יחסית פשוטה.</td>
+        <td headers="הוצאה ממוצעת בחודש על אינטרנט">50 ₪</td>
+    </tr>
+    <tr>
+        <th>טלוויזיה בכבלים</th>
+        <td>רבים מצליחים להסתדר בלעדיה, אך לחלקנו דווקא חשוב שיהיו שם בשבילנו. בדירת שותפים, ההוצאה תתחלק ותהיה יותר קלה.  </td>
+        <td headers="הוצאה ממוצעת בחודש על טלוויזיה בכבלים">100 ₪</td>
+    </tr>
+    <tr>
+        <th>ועד הבית</th>
+        <td>הוצאה מורכבת שתלויה באזור המגורים, בסיכום עם בעל\ת הדירה וברמת השירותים שיש בבניין. </td>
+        <td headers="הוצאה ממוצעת בחודש על ועד הבית">50-100 ₪ </td>
+    </tr>
+    <tr>
+        <th>מים</th>
+        <td>אלא אם אתם מתקלחים שלוש פעמים ביום, אל תדאגו מחשבון המים. לרוב מדובר בהוצאה זולה יחסית, אך חשוב לעקוב ולראות אם יש שינויים פתאומיים ולא ברורים. </td>
+        <td headers="הוצאה ממוצעת בחודש על חשבון המים">60 ₪</td>
+    </tr>
+    <tr>
+        <th>גז</th>
+        <td>שימוש בגז הינה הוצאה יחסית פשוטה, עם זאת רבים מוותרים עליה ומשתמשים בכיריים חשמליות</td>
+        <td headers="הוצאה ממוצעת בחודש על גז">20 ₪</td>
+    </tr>
+    <tr>
+        <th>תחבורה ציבורית\רכב</th>
+        <td>מדובר בהוצאה לא פשוטה, במיוחד אם יש לכם רכב. ניתן להבין למה תושבים רבים בערים מוותרים על הרכב לטובת אופניים או אוטובוס. אם אתם סטודנטים, מגיע לכם רב קו מוזל. </td>
+        <td headers="הוצאה ממוצעת בחודש על תחבורה ציבורית ורכב">1,300 ₪ לבעלי רכב,200-300 ₪ לנוסעים בתחבורה ציבורית</td>
+    </tr>
+    <tr>
+        <th>מזון ומוצרי צריכה</th>
+        <td>אם ההורים עוזרים עם משלוחי קציצות או אספקת נייר טואלט, זה יכול להקל על ההוצאות. אך כל מקרה מדובר בהוצאה משמעותית שיש לקחת בחשבון ולחפש איפה אפשר לחסוך. </td>
+        <td headers="הוצאה ממוצעת בחודש על מזון ומוצרי צריכה">1,000 ₪ </td>
+    </tr>
+    <tr>
+        <th>תחזוקת הבית</th>
+        <td>תחזוקה היא ההוצאה הכי לא צפויה. אי אפשר לדעת מה יקרה מחר, במיוחד בדירות ישנות. רוב ההוצאות המשמעותיות בתחום הינן באחריות בעל הבית. אך ישנם גם מקרים שהשוכר משלם, למשל שרוצים להחליף גוף תאורה וכו'</td>
+        <td headers="הוצאה ממוצעת בחודש על תחזוקת הדירה">לא ניתן לצפות</td>
+    </tr>
+</table>
+
+<!--שותפים-->
+<h2 id="dilemma_roomates_h2">שותפים/זוג: עם מי נגור בבית החדש?</h2>
+    <div class="div_inline">
+    <ul class="reg_list">
+        <li><p><b>שותפים: </b>מצד אחד אתם עוזבים את בית המשפחה כי אתם רוצים פרטיות ואת המקום הפרטי שלכם, אבל תזכרו שלגור עם שותפים זה לא תמיד פרטיות מוחלטת. תחשבו עם עצמכם אם זה משהו שאתם בשלים עבורו. לגור עם שותפים אומר להכיל עוד דעות ואורח חיים שונה משלך, ולפעמים זה אומר גם להתפשר על דברים כדי לשמור על שלום בית.</p></li>
+        <li><p><b>בן\בת זוג: </b>האם אתם בשלים למגורים יחד וחיים משותפים? האם אתם מספיק מכירים את ההרגלים אחד של השנייה ומסוגלים להכיל אותם? האם אתם מספיק מכירים וסומכים אחד על השנייה בכדי להגיע לשלב זה ביחסים? </p></li>
+    </ul>
+</div>
+        <img src="images/dilemma/dilemma_2.jpg" class="dilemma_pic" alt="איור של אנשים שונים"/><div class="imglink_div"><a href="http://www.freepik.com/free-vector/people-avatars_761436.htm" target="_blank" class="imglink_a" id="a2">Freepik©</a></div>
+    <img src="images/dilemma/dilemma_7.jpg" class="dilemma_pic2" alt="איור של זוג רומנטי" /><div class="imglink_div"><a href="http://www.freepik.com/free-vector/romantic-couple-on-bike_761990.htm" target="_blank" class="imglink_a" id="a7">Freepik©</a></div>
+   
+     <h3>הרגעים המצחיקים בלעבור לגור עם הבן\בת זוג, צפו בסרטון של ההרכב "בערך":</h3>
+        <!--סרטון של בערך לגור עם הבת זוג-->
+        <iframe title="סרטון של הרכב בערך על מגורים משותפים כזוג" class="youtube_video" alt="סרטון הומוריסטי על מגורים עם בת זוג" width="560" height="315" src="https://www.youtube.com/embed/-mstJTrxem0" frameborder="0" allowfullscreen></iframe>
+    <p><a href="https://www.facebook.com/beerech" target="_blank" class="kredit">לחצו כאן למעבר לעמוד הפייסבוק של בערך></a></p>
+ <!--חיים עצמאיים-->
+        <h2 id="dilemma_independents_h2">חיים עצמאיים: האם אנחנו מוכנים לזה?</h2>
+    <div class="div_inline">
+        <p>אחרי שאתם עוברים דירה אתם צריכים לדאוג להכל- חשבונות, ניקיונות, תפעול שוטף של הבית, אוכל, כביסה ועוד. בדקו עם עצמכם האם זה משהו שאתם יכולים לעמוד בו ומה היא הדרך הכי נכונה עבורכם לזכור לעשות את זה הדברים (טבלת משימות, רשימת TO DO LIST, תזכורות ביומן וכד').</p>
+        <p>חיים עצמאיים הם אתגר אך לא משהו בלתי אפשרי. חישבו עם עצמכם האם יש לכם את הנכונות להשקיע את המאמץ והאנרגיה הדרושים לכך וכן את האחריות לדאוג לדברים לבד. מדובר במעבר לא פשוט, אך בהחלט אפשרי :)</p>
+        </div>
+    <img src="images/dilemma/dilemma_3.jpg" class="dilemma_pic" alt="איור של רשימת משימות"/><div class="imglink_div"><a href="http://www.freepik.com/free-vector/hand-holding-a-pen-and-filling-out-a-form_1082297.htm" target="_blank" class="imglink_a" id="a3">Freepik©</a></div>
+
+        <!--סביבה-->
+        <h2 id="dilemma_serounding_h2">סביבה: מי יהיה קרוב בשבילי? </h2>
+    <div class="div_inline">
+    <p>האם המקום שאליו תעברו יהיה עם אנשים שאתם מכירים שיוכלו לספק לכם "עוגן" כאשר תצטרכו או שאתם עוברים למקום זר? לפעמים מעבר הדירה יהיה יותר פשוט כאשר יש בסביבה מישהו שאתם מכירים.</p>
+        <p>אם אתם עוברים למקום חדש, אל דאגה, פשוט תהיו חברתיים ותכירו אנשים חדשים. לחלקנו, זה דווקא הכי כיף – לבנות הכול מההתחלה. </p>
+    </div>
+   
+     <img src="images/dilemma/dilemma_4.jpg" class="dilemma_pic" id="dilemma_pic4"  alt="איור של חברים שמחים"/><div class="imglink_div"><a href="http://www.freepik.com/free-vector/friendship-concept_765701.htm" target="_blank" class="imglink_a" id="a4">Freepik©</a></div>
+
+    <!--הצפת תוכן-->
+    <aside>
+        <h2>קראו עוד >></h2>
+        <div class="innerpage_flood" id="innerpage_flood_first">
+            <img src="images/dilemma/dilemma_5.jpg" alt="איור של דמות סוחבת מזוודה" />
+            <img src="images/buttons/b2_4.svg" class="innerpage_flood_topimg" />
+            <p>אז החלטתם לעבור דירה! <br /><a href="s2_warning.html">בואו נראה איך עושים את זה נכון  >></a></p>
+            <div class="imglink_div"><a href="http://www.freepik.com/free-photo/rag-doll-pulling-a-large-box_948199.htm" target="_blank" class="imglink_a" id="a5">Freepik©</a></div>
+        </div>
+        <div class="innerpage_flood">
+            <img src="images/dilemma/dilemma_6.jpg" />
+            <img src="images/buttons/b2_2.svg" class="innerpage_flood_topimg" alt="איור של חתימת חוזה" />
+            <p>רגע אבל מה עם חוזה ? <br /><a href="notdevolped.html"> בואו נבדוק איך הוא נראה ולמה צריך לשים לב >></a></p>
+        </div>
+    </aside>
+</article>
+   
+     </div>
+
+    <div id="grassfront"></div>
+</body>
+</html>

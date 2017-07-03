@@ -1,0 +1,1169 @@
+body  {
+    direction:rtl;
+    background-color: #9CE2F2; 
+    /*background-image: url(../images/background.jpg);*/   
+}
+
+/*הטמעת דנה פונט*/
+@font-face {
+    font-family: 'dana_yad_alefalefalefnormal';
+    src: url('danayadalefalefalef-normal-webfont.eot');
+    src: url('danayadalefalefalef-normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('danayadalefalefalef-normal-webfont.woff2') format('woff2'),
+         url('danayadalefalefalef-normal-webfont.woff') format('woff'),
+         url('danayadalefalefalef-normal-webfont.ttf') format('truetype'),
+         url('danayadalefalefalef-normal-webfont.svg#dana_yad_alefalefalefnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*סוף הטמעה*/
+
+
+#grassback {
+
+    width: 100%; height: 35%; 
+    background-image: url(../images/grassback.svg) ;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100%;
+    position: fixed; bottom: 0px;
+    opacity: 0.5;
+    filter:blur(1px) brightness(120%);
+      z-index: -1;  
+    /*border: 1px solid black !important;*/
+}
+#grassfront {
+    height: 20%; width: 100%;
+    background-image: url(../images/grassfront.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed; bottom: -15px;
+   
+}
+#skip_to {
+    width: 170px; height: 70px; border: 2px solid black; 
+    text-decoration: none; text-align: center; color:black;
+    background-color: yellow; font-family:'Varela Round';  padding-top: 25px;
+    font-size: 17pt; position:absolute; top:-1000px; right: -700px;
+}
+#skip_to:focus {
+    top: 60px; right: 700px; 
+}
+#container {
+    width: 100%; height: auto;
+    margin: 0px auto;  
+    /*border: 1px solid black;*/
+    
+}
+
+
+
+/*קריאה לפעולה מתחת לסרטונים*/
+.kredit {
+    color:black; font-size: 11pt;
+    margin-right: 35px; 
+}
+.kredit:hover {
+    font-weight: bold;
+}
+.kredit:focus {
+    font-weight: bold; border: 1px solid black;
+}
+/*האדר - למעלה*/
+header {
+    width: 100%; height: 110px;
+    background-color: #CDF4FF;
+    border-bottom: 4px solid #0050AF;
+}
+#logo {
+    width: 280px; height: 80px; 
+    background-image:url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-position-y: -10px;   
+    background-size: 100%; 
+    margin-right: 65px;   
+}
+.headr_div {
+    width:960px; margin: 0px auto;
+     height: 110px;
+}
+#logo:hover {
+   filter:drop-shadow(2px 2px 5px #aaaaaa);
+}
+#logo_a {
+    text-decoration: none; 
+}
+#logo_a:focus {
+    font-weight: bold; 
+}
+#logo_text1 {
+font-family: 'Varela Round'; font-size:14pt; color: #006870;
+text-align: center; padding-top: 20px; padding-right: 50px;
+}
+#logo_text2 {
+font-family: 'Varela Round'; font-size:11pt; color: #0872B9;
+text-align: center; padding-right: 50px;
+}
+#logo_text3 {
+font-family:dana_yad_alefalefalefnormal; font-size:10pt; color: black;
+text-align: center;  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black; letter-spacing: 2px;
+   padding-top: 6px; padding-right: 30px;
+}
+/*תפריט ניווט שמאלי אודות*/
+#header_left_nav {
+   position:relative; top:-80px;
+   /*left:-55px;*/ left:-7%;
+}
+#header_left_nav ul li {
+    display: block; float: left;
+}
+#header_left_nav ul li a {
+     text-decoration: none; font-family: 'Varela Round'; 
+    font-size: 10pt; color: black; 
+    width: 90px; height: 18px; display: block;
+    text-align:center;
+        background-color: #2EB6DB; 
+    -webkit-border-radius:  0px 0px 30px 30px;
+border-radius: 0px 0px 30px 30px;
+ padding-top: 5px;   
+}
+#header_left_nav ul li:hover a {
+    background-color: #0050AF; font-weight:bold; color:white;
+ }
+#header_left_nav ul li a:focus {
+    background-color: #0050AF; font-weight:bold;border: 2px solid yellow; color:white;
+    -webkit-border-radius: 0px 0px 0 0; border-radius: 0px 0px 0 0;
+ }
+
+/*תפריט ניווט ימני טאבים האדר*/
+#header_right_nav {
+  /*position: absolute; top: 110px;*/ 
+  margin-top: 10px; margin-right: 65px;
+}
+#header_right_nav ul {
+    list-style: none;   
+}
+#header_right_nav ul li {
+    display: inline-block;
+    float: right; 
+}
+#header_right_nav ul li a {
+    text-decoration: none; font-family: 'Varela Round'; 
+    font-size: 10pt; color: white; 
+    width: 140px; height: 18px; display: block;
+        background-color: #0050AF; 
+    -webkit-border-radius: 45px 30px 0 0;
+border-radius: 45px 30px 0 0;
+padding-right: 15px; padding-top: 5px; margin-right: 2px;
+}
+#header_right_nav ul li a:hover {
+    font-weight:bold;
+    background-color: #2EB6DB;
+}
+#header_right_nav ul li a:focus {
+    font-weight:bold;background-color: #2EB6DB;
+    border: 2px solid yellow;
+    -webkit-border-radius: 0px 0px 0 0; border-radius: 0px 0px 0 0;
+}
+/*תת תפריטים*/
+#header_right_nav ul li ul {
+display: none; position: absolute;
+}
+#header_right_nav ul li:hover ul  {
+display: block !important;   width: 120px;
+}
+#header_right_nav ul li ul li a {
+    -webkit-border-radius: 0px 0px 0 0 !important;
+border-radius: 0px 0px 0 0 !important; 
+}
+#header_right_nav ul li ul li:hover a {
+background-color: #2EB6DB; color:black;
+font-weight:bold;
+}
+
+
+/*סוף האדר*/
+
+/*חלק עיקרי*/
+#main {
+    width: 960px; height: auto;
+       
+        margin: 0px auto;   
+}
+#main h2 {
+    font-family: dana_yad_alefalefalefnormal; font-size: 20pt;
+    -webkit-text-stroke: 2px black;
+    /*padding-right: 675px; 
+    padding-top: 30px;*/
+    text-align: center; margin-top: 20px; margin-bottom:10px;
+    letter-spacing: 3PX;
+}
+#main a {
+    text-decoration: none;
+    font-family: 'Varela Round';
+    color: black; font-size: 14pt; 
+     
+}
+/*חצים לבנים*/
+#arrow_right {
+    display: inline-block; width: 60px; height: 55px; 
+    background-image: url(../images/arrow_right.svg);
+    /*position: absolute; top: 60px; right: 330px;*/
+    background-repeat: no-repeat; background-size: 80%;
+    margin-right: 290px; margin-left: 240px; margin-bottom: 10px;
+}
+#arrow_left {
+    display: inline-block; width: 60px; height: 55px; 
+    background-image: url(../images/arrow_left.svg);
+    /*position: absolute; top: 60px; right: 610px;*/
+    background-repeat: no-repeat; background-size: 80%; margin-bottom: 10px;
+   
+}
+/*קישורים לא פעילים*/
+.inactive {
+    cursor: default;
+    -webkit-box-shadow: 0 0 0px 0px #A14093 !important;
+box-shadow: 0 0 0px 0px white !important ;
+font-weight: normal !important;
+
+}
+
+/*בניין ימני סגול*/
+#rightbuilding {
+    width: 360px; height: 500px; 
+    background-color: #F288D6;
+    background-image:url(../images/right.png);
+    background-repeat: no-repeat;
+    display:inline-block;
+    margin-right: 80px;
+    /*position: absolute; right: 350px; bottom: 10px;*/
+}
+#rightbuilding_nav {
+    margin: 25px 38px;
+}
+#rightbuilding_nav ul li {
+    display: inline-block; width: 120px; height: 130px;
+    background-color: #E276CB; margin: 10px 7px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+border-radius: 25px 25px 25px 25px;
+border-bottom: 3px solid #A81D8E; border-right:3px solid #A81D8E;
+border-left: 2px solid #D888C9; border-top: 2px solid #D888C9;
+}
+#rightbuilding_nav ul li a{
+      display: block;
+    width: 120px; height: 130px;  
+        -webkit-border-radius: 25px 25px 25px 25px;
+border-radius: 25px 25px 25px 25px;
+}
+#rightbuilding_nav ul li a:hover  {
+-webkit-box-shadow: 0 0 10px 1px #A14093;
+box-shadow: 0 0 10px 1px white ;
+font-weight:bold;
+}
+#rightbuilding_nav ul li a:focus  {
+-webkit-box-shadow: 0 0 10px 1px #A14093;
+box-shadow: 0 0 10px 1px white ;
+font-weight:bold;
+}
+#b1_head  {
+    width: 265px !important ; height: 60px !important;
+    background-color: #CE52BC !important;
+    margin-bottom: 15px !important; text-align: center !important;   
+}
+#b1_head a {
+     font-size: 22px !important;
+    width: 265px !important; height: 20px !important;  
+        -webkit-border-radius: 25px 25px 25px 25px !important;
+border-radius: 25px 25px 25px 25px !important;
+padding: 20px 0px !important;
+}
+.purplelower {
+    width:100px; height: 50px;
+    -webkit-border-radius: 0 0 25px 25px;
+border-radius: 0px 0px 25px 25px;
+background-color: #CE52BC;
+position: relative; top: 70px;
+    text-decoration: none; font-family: 'Varela Round';
+    color: black; font-size: 14pt; 
+    text-align: center; padding-top: 10px;
+   padding-right: 10px; padding-left: 10px;
+
+
+}
+#b1_1 {
+    background-image:url(../images/buttons/b1_1.svg);
+    background-repeat: no-repeat; 
+     background-position-y: 10px;
+    background-position-x: 33px;
+    background-size: 45%;
+}
+#b1_2 {
+    background-image:url(../images/buttons/b1_2.svg);
+    background-repeat: no-repeat; 
+    background-position-y: 10px;
+    background-position-x: 33px;
+    background-size: 45%;
+}
+#b1_3 {
+    background-image:url(../images/buttons/b1_3.svg);
+    background-repeat: no-repeat; 
+    background-position-y: 10px;
+    background-position-x: 33px;
+    background-size: 43%;
+}
+#b1_4 {
+    background-image:url(../images/buttons/b1_4.svg);
+    background-repeat: no-repeat; 
+    background-position-y: 10px;
+    background-position-x: 33px;
+    background-size: 43%;
+}
+/*סוף בניין ימני סגול*/
+
+/*בניין שמאלי כתום*/
+#leftbuilding {
+    width: 360px; height: 500px;
+    background-color: #FFB85F;
+    background-image:url(../images/left.png);
+    background-repeat: no-repeat;
+    display:inline-block; margin-left: 80px; margin-right: 70px;
+    /*position: absolute; left: 350px; bottom: 10px;*/
+}
+#leftbuilding_nav {
+    margin: 25px 38px;
+}
+#leftbuilding_nav ul li {
+    display: inline-block; width: 120px; height: 130px;
+    background-color: #F7A54B; margin: 10px 7px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+border-radius: 25px 25px 25px 25px;
+border-bottom: 3px solid #D35E07; border-right:3px solid #D35E07;
+border-left: 2px solid #F7A269; border-top: 2px solid #F7A269;
+
+}
+#leftbuilding_nav ul li a{
+      display: block;
+    width: 120px; height: 130px;  
+        -webkit-border-radius: 25px 25px 25px 25px;
+border-radius: 25px 25px 25px 25px;
+}
+
+#leftbuilding_nav ul li a:hover  {
+-webkit-box-shadow: 0 0 10px 1px #D35E07;
+box-shadow: 0 0 10px 1px white ;
+font-weight:bold;
+}
+#leftbuilding_nav ul li a:focus  {
+-webkit-box-shadow: 0 0 10px 1px #D35E07;
+box-shadow: 0 0 10px 1px white ;
+font-weight:bold;
+}
+#b2_1_back {
+          display: inline-block; width: 120px; height: 130px;
+    background-color: #F7A54B; margin: 10px 7px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+border-radius: 25px 25px 25px 25px;
+border-bottom: 3px solid #D35E07; border-right:3px solid #D35E07;
+border-left: 2px solid #F7A269; border-top: 2px solid #F7A269;
+
+
+    position: absolute; top: 115px; left:182px;
+    z-index: -1;
+    
+        transform-style: preserve-3d;    
+      
+       /*backface-visibility: hidden;*/
+}
+#leftbuilding_nav ul li a:hover #b2_1_back {
+    z-index: 1;
+    font-weight:bold;
+    /*transform: rotateY(360deg);*/
+
+}
+
+
+
+#b2_head  {
+    width: 265px !important ; height: 60px !important;
+    background-color: #F29130 !important;
+    margin-bottom: 15px !important; text-align: center !important;   
+}
+#b2_head a {
+     font-size: 22px !important;
+    width: 265px !important; height: 20px !important;  
+        -webkit-border-radius: 25px 25px 25px 25px !important;
+border-radius: 25px 25px 25px 25px !important;
+padding: 20px 0px !important;
+}
+.orangelower {
+    width:100px; height: 50px;
+    -webkit-border-radius: 0 0 25px 25px;
+border-radius: 0px 0px 25px 25px;
+background-color: #F29130;
+position: relative; top: 70px;
+    text-decoration: none; font-family: 'Varela Round';
+    color: black; font-size: 14pt; 
+    text-align: center; padding-top: 10px;
+   padding-right: 10px; padding-left: 10px;
+}
+#b2_1 {
+    background-image:url(../images/buttons/b2_2.svg);
+    background-repeat: no-repeat; 
+     background-position-y: 10px;
+    background-position-x: 33px;
+    background-size: 45%;
+}
+#orangelower1 {
+    padding-right: 5px !important; padding-left: 5px !important;
+    width: 110px !important;
+}
+#b2_2 {
+    background-image:url(../images/buttons/b2_1.svg);
+    background-repeat: no-repeat; 
+    background-position-y: 10px;
+    background-position-x: 33px;
+    background-size: 45%;
+}
+#b2_3 {
+    background-image:url(../images/buttons/b2_4.svg);
+    background-repeat: no-repeat; 
+    background-position-y: 10px;
+    background-position-x: 33px;
+    background-size: 43%;
+}
+#b2_4 {
+    background-image:url(../images/buttons/b2_3.svg);
+    background-repeat: no-repeat; 
+    background-position-y: 10px;
+    background-position-x: 33px;
+    background-size: 43%;
+}
+/*סוף בניין שמאלי כתום
+
+
+
+
+
+
+/*דפי לובי ופנימיים*/
+/*דפי לובי ופנימיים*/
+/*דפי לובי ופנימיים*/
+
+.h3_black {
+    color:black !important;
+}
+#s2_dilemma_page h3 {
+    color: black !important;
+}
+#s2_dilemma_page a {
+    color: black !important;
+}
+.lobby_main {
+  
+    width: 960px; height:auto;
+    /*border: 1px solid black;*/
+    margin: 0px auto;
+}
+.lobby_main h1 {
+    font-family: dana_yad_alefalefalefnormal; font-size: 22pt; 
+    margin: 20px 370px;-webkit-text-stroke: 1px black;
+}
+.lobby_main h2 {
+    font-family: 'Varela Round'; font-size: 14pt; 
+        margin-top: 20px; margin-bottom: 30px; 
+    margin-right: 68px; margin-left: 450px;
+    font-weight: bold;
+}
+#s2_lobby_tagline {
+    font-family: 'Varela Round'; font-size: 12pt; 
+    margin-top: 30px; margin-bottom: 30px; 
+    margin-right: 68px; margin-left: 450px;
+}
+#s1_lobby_tagline {
+    font-family: 'Varela Round'; font-size: 12pt; 
+    margin-top: 30px; margin-bottom: 30px; 
+    margin-right: 68px; margin-left: 450px;
+}
+/*לובי 2 - עדיין לא שוכר דירה*/
+.s2_lobby_box {
+  
+     width: 520px; height: 155px;
+    background-color: #FFB85F;
+    margin: 20px auto;
+    background-image: url(../images/lobby_box_strip.svg);
+    background-repeat: no-repeat; background-position-x:3px;
+    
+}
+
+.s2_lobby_box_description {
+    display: inline-flex;
+   width: 300px; height: 130px;
+   font-family: 'Varela Round'; font-size: 12pt;
+    line-height: 14pt;
+}
+.s2_lobby_box a {
+text-decoration: none;
+display: block; width: 120px; height: 130px;
+    -webkit-border-radius: 25px 25px 25px 25px; border-radius: 25px 25px 25px 25px;
+}
+
+.s2_lobby_box a:hover  {
+-webkit-box-shadow: 0 0 10px 1px #A14093;
+box-shadow: 0 0 10px 1px #D35E07;
+font-weight:bold;
+}
+.s2_lobby_box a:focus  {
+-webkit-box-shadow: 0 0 10px 1px #A14093;
+box-shadow: 0 0 10px 1px #D35E07;
+font-weight:bold;
+}
+/*דף לובי 2 - מלבן עם כותרת ואייקון לקופסת תוכן - מספר 1*/
+
+#s2_lobby_box1_topic {
+     display: inline-flex; width: 120px; height: 130px;
+         background-color: #F7A54B; margin: 10px 7px;
+         
+    -webkit-border-radius: 25px 25px 25px 25px; border-radius: 25px 25px 25px 25px;
+border-bottom: 3px solid #D35E07; border-right:3px solid #D35E07; border-left: 2px solid #F7A269; border-top: 2px solid #F7A269;
+    background-image:url(../images/buttons/b2_2.svg); background-repeat: no-repeat; 
+     background-position-y: 10px; background-position-x: 33px; background-size: 45%;
+}
+/*דף לובי 2 - מלבן עם כותרת ואייקון לקופסת תוכן - מספר 2*/
+#s2_lobby_box2_topic {
+     display: inline-flex; width: 120px; height: 130px;
+         background-color: #F7A54B; margin: 10px 7px;
+         
+    -webkit-border-radius: 25px 25px 25px 25px; border-radius: 25px 25px 25px 25px;
+border-bottom: 3px solid #D35E07; border-right:3px solid #D35E07; border-left: 2px solid #F7A269; border-top: 2px solid #F7A269;
+    background-image:url(../images/buttons/b2_1.svg); background-repeat: no-repeat; 
+     background-position-y: 10px; background-position-x: 33px; background-size: 45%;
+}
+/*דף לובי 2 - מלבן עם כותרת ואייקון לקופסת תוכן - מספר 3*/
+#s2_lobby_box3_topic {
+     display: inline-flex; width: 120px; height: 130px;
+         background-color: #F7A54B; margin: 10px 7px;
+         
+    -webkit-border-radius: 25px 25px 25px 25px; border-radius: 25px 25px 25px 25px;
+border-bottom: 3px solid #D35E07; border-right:3px solid #D35E07; border-left: 2px solid #F7A269; border-top: 2px solid #F7A269;
+    background-image:url(../images/buttons/b2_4.svg); background-repeat: no-repeat; 
+     background-position-y: 10px; background-position-x: 33px; background-size: 45%;
+}
+/*דף לובי 2 - מלבן עם כותרת ואייקון לקופסת תוכן - מספר 4*/
+#s2_lobby_box4_topic {
+     display: inline-flex; width: 120px; height: 130px;
+         background-color: #F7A54B; margin: 10px 7px; 
+         
+         
+    -webkit-border-radius: 25px 25px 25px 25px; border-radius: 25px 25px 25px 25px;
+border-bottom: 3px solid #D35E07; border-right:3px solid #D35E07; border-left: 2px solid #F7A269; border-top: 2px solid #F7A269;
+    background-image:url(../images/buttons/b2_3.svg); background-repeat: no-repeat; 
+     background-position-y: 10px; background-position-x: 33px; background-size: 45%;
+}
+#lobby_lastbox {
+    margin-bottom: 100px;
+}
+
+
+
+/*לובי 1 - כבר שוכר דירה*/
+.s1_lobby_box {
+     width: 520px; height: 155px;
+    background-color: #F288D6;
+    margin: 20px auto;
+    background-image: url(../images/lobby1_box_strip.svg);
+    background-repeat: no-repeat; background-position-x:3px;   
+}
+
+.s1_lobby_box_description {
+    display: inline-flex;
+   width: 300px; height: 130px;
+   font-family: 'Varela Round'; font-size: 12pt;
+    line-height: 14pt;
+}
+.s1_lobby_box a {
+text-decoration: none;
+display: block; width: 120px; height: 130px;
+    -webkit-border-radius: 25px 25px 25px 25px; border-radius: 25px 25px 25px 25px;
+}
+
+.s1_lobby_box a:hover  {
+-webkit-box-shadow: 0 0 10px 1px #A14093;
+box-shadow: 0 0 10px 1px white;
+font-weight:bold;
+}
+.s1_lobby_box a:focus  {
+-webkit-box-shadow: 0 0 10px 1px #A14093;
+box-shadow: 0 0 10px 1px white;
+font-weight:bold;
+}
+/*דף לובי 1 - מלבן עם כותרת ואייקון לקופסת תוכן - מספר 1*/
+
+#s1_lobby_box1_topic {
+     display: inline-flex; width: 120px; height: 130px;
+         background-color: #E276CB; margin: 10px 7px;
+         
+    -webkit-border-radius: 25px 25px 25px 25px; border-radius: 25px 25px 25px 25px;
+border-bottom: 3px solid #A81D8E; border-right:3px solid #A81D8E; border-left: 2px solid #D888C9; border-top: 2px solid #D888C9;
+    background-image:url(../images/buttons/b1_1.svg); background-repeat: no-repeat; 
+     background-position-y: 10px; background-position-x: 33px; background-size: 45%;
+}
+/*דף לובי 1 - מלבן עם כותרת ואייקון לקופסת תוכן - מספר 2*/
+#s1_lobby_box2_topic {
+     display: inline-flex; width: 120px; height: 130px;
+         background-color: #E276CB; margin: 10px 7px;
+         
+    -webkit-border-radius: 25px 25px 25px 25px; border-radius: 25px 25px 25px 25px;
+border-bottom: 3px solid #A81D8E; border-right:3px solid #A81D8E; border-left: 2px solid #D888C9; border-top: 2px solid #D888C9;
+    background-image:url(../images/buttons/b1_2.svg); background-repeat: no-repeat; 
+     background-position-y: 10px; background-position-x: 33px; background-size: 45%;
+}
+/*דף לובי 1 - מלבן עם כותרת ואייקון לקופסת תוכן - מספר 3*/
+#s1_lobby_box3_topic {
+     display: inline-flex; width: 120px; height: 130px;
+         background-color: #E276CB; margin: 10px 7px;
+         
+    -webkit-border-radius: 25px 25px 25px 25px; border-radius: 25px 25px 25px 25px;
+border-bottom: 3px solid #A81D8E; border-right:3px solid #A81D8E; border-left: 2px solid #D888C9; border-top: 2px solid #D888C9;
+    background-image:url(../images/buttons/b1_3.svg); background-repeat: no-repeat; 
+     background-position-y: 10px; background-position-x: 33px; background-size: 45%;
+}
+/*דף לובי1 - מלבן עם כותרת ואייקון לקופסת תוכן - מספר 4*/
+#s1_lobby_box4_topic {
+     display: inline-flex; width: 120px; height: 130px;
+         background-color: #E276CB; margin: 10px 7px; 
+         
+         
+    -webkit-border-radius: 25px 25px 25px 25px; border-radius: 25px 25px 25px 25px;
+border-bottom: 3px solid #A81D8E; border-right:3px solid #A81D8E; border-left: 2px solid #D888C9; border-top: 2px solid #D888C9;
+    background-image:url(../images/buttons/b1_4.svg); background-repeat: no-repeat; 
+     background-position-y: 10px; background-position-x: 33px; background-size: 45%;
+}
+#lobby_lastbox {
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*דף אודות*/
+
+#about_main {
+    width: 605px; height: auto; 
+    margin: 0px auto; padding-top: 25px; padding-bottom: 50px;
+    padding-right: 55px; padding-left: 300px;
+}
+#about_main h1 {
+    font-family:dana_yad_alefalefalefnormal; font-size: 20pt;
+      -webkit-text-stroke: 1px black; margin: 30px 0px; 
+}
+#about_main h2 {
+    font-family: 'Varela Round';
+     font-size: 13pt;
+    margin-top: 20px; 
+}
+#about_main p {
+    font-family: 'Varela Round'; font-size: 12pt;
+    padding: 10px 0px;line-height: 14pt;
+}
+#about_main ul li  {
+font-family: 'Varela Round'; font-size: 12pt;
+margin-right: 25px;margin-top:3px;
+}
+#about_main ul li a {
+ color:black;
+}
+#about_main ul li a:hover {
+font-weight: bold;
+}
+#about_main ul li a:focus {
+font-weight: bold;
+}
+#studentslist {
+    margin-top: 10px; margin-bottom: 30px;
+}
+#studentslist li {
+    display: inline-block; width: 150px; height:230px;
+    text-align: center; font-weight: bold;
+    
+        -webkit-border-radius: 25px 25px 25px 25px; border-radius: 25px 25px 25px 25px;
+}
+#studentslist li a {
+    color: red;
+}
+#studentslist li a:focus {
+    font-weight: bold;
+}
+#studentslist li:first-child {
+    background-image: url(../images/aya.jpg);
+    background-repeat: no-repeat; background-position-y: 30px;
+}
+#studentslist li:nth-child(2) {
+    background-image: url(../images/adi.jpg);
+    background-repeat: no-repeat; background-position-y: 30px;
+}
+#studentslist li:nth-child(3) {
+    background-image: url(../images/yehodar.jpg);
+    background-repeat: no-repeat; background-position-y: 30px;
+}
+#about_footer  {
+    width: 905px; height: auto; margin: 0px auto;
+    margin-bottom: 200px; padding-right: 55px;
+}
+#about_footer a  {
+    display: block; color: black;
+    font-family: 'Varela Round'; font-size: 10pt;
+}
+#about_footer img  {
+    margin-top: 20px;
+    width: 15%; height: 15%;
+}
+
+/*תפריט ניווט פירורי לחם*/
+.breadcrumbs {
+    margin-right: 350px; margin-top: 20px;
+    
+}
+.breadcrumbs ul li {
+    display: inline-block;font-family: 'Varela Round'; font-size: 10pt;
+}
+.breadcrumbs ul li a {
+    display: inline-block;font-family: 'Varela Round'; font-size: 10pt;
+    color: black;
+}
+.breadcrumbs ul li:after {
+    content:">";
+}
+.breadcrumbs ul li:last-child:after {
+    content:"";
+}
+.breadcrumbs ul li a:hover {
+font-weight: bold;
+}
+.breadcrumbs ul li a:focus {
+font-weight: bold; border: 1px solid yellow;
+}
+/*תפריט ניווט בצד עמוד פנימי*/
+
+.innerpage_right_menu {
+    background-color: #FFB85F;
+    width: 150px; height: 350px;
+    /*margin-right: 342px; margin-top: 80px;*/
+    /*position: fixed; top: 50px; right: 0px;*/
+    position:fixed;
+    top: 28%; right: 22%;  
+}
+
+@media only screen and (min-width:80px) and (max-width: 880px)  {
+    .innerpage_right_menu {
+    /*position:fixed;
+    top: 8%; right: 20%;*/  position: absolute; 
+    
+}
+}
+
+.s2_warning_nav {
+    margin: 10px 15px;
+}
+.s2_warning_nav ul {
+    list-style:none;
+}
+.s2_warning_nav ul li {
+    display: block;
+    width: 120px;
+    margin-bottom: 10px;
+}
+.s2_warning_nav ul li a {
+    display: block;
+    width: 112px;
+    background-color:rgba(255, 255, 255, 0.54);
+    height: 23px;
+    text-decoration: none;
+    text-align: right;
+    font-family: 'Varela Round';
+    font-size: 12pt; color:black;
+    padding-top: 7px;   padding-right:8px;
+}
+.s2_warning_nav ul li a:hover {
+    background-color:rgba(255, 255, 255, 0.8);
+    font-weight:bold;
+}
+.s2_warning_nav ul li a:focus {
+    background-color:rgba(255, 255, 255, 0.8);
+    font-weight:bold;
+}
+.s2_warning_nav ul li a:visited {
+    background-color:rgba(255, 255, 255,1);
+    font-weight:bold;
+}
+
+
+/*דף תוכן פנימי*/
+.youtube_video {
+    
+    border: 2px solid white; margin: 15px 20px;
+}
+.innerpage_main {
+    /*position:relative; top: -350px;right:495px;*/
+    width: 740px; height: auto;
+    padding: 10px 30px; margin-right:500px; margin-top:30px;
+ margin-bottom:150px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.innerpage_main h1 {
+    font-family: 'Varela Round'; color:black;
+    font-size:16pt; font-weight: bold;
+    text-align:center; margin: 20px 0px;
+}
+.innerpage_main h2 {
+    font-family: dana_yad_alefalefalefnormal; color:black;
+    font-size:20pt; 
+     margin: 30px 0px; -webkit-text-stroke: 1px black;
+     margin-top: 80px !important;
+}
+.innerpage_main h3 {    
+    font-family: 'Varela Round'; color: #127dc6;
+    font-size:14pt; font-weight: bold; margin-bottom: 10px;
+     margin-top: 5px; 
+
+}
+.innerpage_main p {
+    font-family: 'Varela Round';
+    color: black; font-size: 12pt;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+.innerpage_list {
+    list-style:none;
+}
+.innerpage_list li {
+    display:inline-block;
+    width: 200px; height: auto; 
+    padding: 10px 10px;
+    margin-left: 20px; margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.87);
+    /*-webkit-box-shadow: 2px 2px 5px 1px #9C9C9C;
+box-shadow: 2px 2px 5px 1px #9C9C9C;*/
+    /*border-right: 2px solid #aaaaaa;
+    border-top: 2px solid #aaaaaa;*/
+}
+.innerpage_list_p {
+    font-family: 'Varela Round'; color:black;
+    font-size:12pt;  margin-bottom: 10px;  
+    display: block; width: 200px; height: 100px; 
+}
+.innerpage_list_regular {
+    display: inline-block;
+    
+}
+.innerpage_list_regular li {
+    margin: 10px 30px; width: 460px; 
+}
+.warning_contractimg {
+border: 2px solid white;
+    display: inline-block;
+}
+.reg_list {
+    list-style:disc; color:black; margin-right: 35px; width: 450px;
+}
+b {
+    font-family:'Varela Round';
+}
+/*הצפת תוכן בדף תוכן פנימי*/
+.innerpage_flood {
+    display: inline-block; width: 200px; height: 230px;
+    padding: 10px 10px;
+    position:relative;
+}
+#innerpage_flood_first{
+   margin-right: 250px;
+}
+.innerpage_flood p {
+    display:block; width: 200px; height: 79px; 
+    margin-top: 10px;
+}
+.innerpage_flood a {
+    display:block;
+    color: black; margin-top: 10px;
+}
+.innerpage_flood a:hover {
+font-weight: bold;
+}
+.innerpage_flood_topimg {
+    width: 25%; height: 25%;
+    position: absolute; top: 95px; right: 20px;
+}
+
+
+/*הגדרות מיוחדות לדף הקו למתלבט*/
+.div_inline {
+    display: inline-block !important;
+    color:red !important;
+    width:520px;
+    /*width: 500px; border: 1px solid black;*/
+}
+
+.dilemma_pic {
+    display:inline-block; 
+    border: 2px solid white;
+    margin-right: 10px;
+    vertical-align: top;
+    margin-top: 0px;
+}
+.dilemma_pic2 {
+    
+    border: 2px solid white;
+    position:relative; left: -520px; top: -50px;
+    margin-right: 10px;
+    
+    margin-top: 0px;
+}
+#dilemma_pic4 {
+    margin-top: 0px;
+}
+
+/*טבלת תקציב הקו למתלבט*/
+#dilemma_budget_table {
+width: 630px;
+display: none;
+
+}
+#dilemma_budget_table,tr,th,td {
+    font-family: 'Varela Round';
+border: 2px solid white;
+margin: 10px auto;
+margin-top: 30px;
+}
+#dilemma_budget_table th:nth-child(1) {
+width: 20%;
+}
+#dilemma_budget_table td:nth-child(2) {
+width: 60%;
+}
+#dilemma_budget_table td:nth-child(3) {
+width: 20%;
+}
+#dilemma_budget_table td {
+    padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#dilemma_budget_table th {
+    vertical-align:middle;
+    padding: 0px 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#dilemma_budget_table tr:nth-child(1) {
+    height: 70px;
+    font-size: 14pt;
+}
+#icon2 {
+    display:none;
+}
+
+.innerpage_main h3 a {
+      font-family: 'Varela Round'; color: #127dc6;
+    font-size:14pt; font-weight: bold; margin-bottom: 10px;
+     margin-top: 5px; 
+}
+
+/*דף מפת אתר*/
+#sitemap_main {
+   width: 760px; height: auto; 
+    margin: 0px auto; padding: 60px 35px;
+    margin-bottom: 20px;
+}
+#sitemap_main p {
+    font-family: 'Varela Round'; font-size: 12pt;
+
+    }
+#sitemap_main a:hover {
+    text-decoration: underline;
+}
+#sitemap_main a:focus {
+    text-decoration: underline;
+}
+#sitemap_main h1 {
+    font-family: dana_yad_alefalefalefnormal; font-size: 20pt;
+      -webkit-text-stroke: 1px black; margin-bottom: 30px;
+      letter-spacing: 1pt;
+}
+#sitemap_main ul {
+    margin: 5px 10px;
+}
+#sitemap_ul> li {
+    display:inline-block; width: 220px; height:200px;
+    /*background-color: rgba(255, 255, 255, 0.81);*/
+    margin: 0px 10px;
+}
+#sitemap_ul> li h3{
+    margin:15px 10px;
+
+}
+#sitemap_ul li h3 a {
+          font-family: 'Varela Round'; color: black;
+    font-size:15pt; font-weight: bold; text-decoration:none;
+}
+#sitemap_ul li h3  {
+          font-family: 'Varela Round'; color: black;
+    font-size:15pt; font-weight: bold;
+}
+#sitemap_ul li ul  {
+    list-style: disc;
+}
+#sitemap_ul li ul li  {
+    margin-right: 30px;
+    margin-bottom: 6px;
+    font-family: 'Varela Round';
+    color: #474747;
+}
+#sitemap_ul li ul li a {
+         font-family: 'Varela Round'; font-size:12pt; color:black;
+         text-decoration:none;
+}
+.devopled_page {
+color: black !important; 
+font-weight:bold; font-size: 13pt !important;
+}
+
+
+/*דף צור קשר*/
+#contactus_main {
+    
+   width: 760px; height: auto; 
+    margin: 0px auto; padding: 60px 35px;
+    margin-bottom: 20px;
+}
+#contactus_main h1 {
+        font-family: dana_yad_alefalefalefnormal; font-size: 20pt;
+      -webkit-text-stroke: 1px black; margin-bottom: 20px;
+      letter-spacing: 1pt;
+}
+#contactus_main p {
+     font-family: 'Varela Round'; color: black;
+    font-size:13pt; 
+    margin-bottom: 35px;
+}
+#contactus_main form {
+    padding: 20px 20px; width: 300px; height:auto;
+}
+#contactus_main form label {
+     display:block; width: auto; font-family: 'Varela Round';
+     font-size: 13pt; margin: 10px 0px;
+}
+#contactus_main form input {
+   width: 220px; margin: 5px 0px;    
+}
+#contactus_main form select {
+   width: 220px; margin: 5px 0px;    
+}
+#contactus_main form input:focus {
+
+   font-weight:bold;   
+}
+#Send {
+    width: 120px !important; height: 30px;
+    font-family: 'Varela Round'; font-size: 12pt;
+  
+}
+
+/*זכויות יוצרים*/
+.imglink_div {  
+    position: relative; width:0px; height:0px; 
+}
+
+.imglink_a {
+    font-size: 9pt; 
+    text-align:left; 
+    color:black;  
+    position:absolute;  left: -195px; top: -20px;
+    text-align:left; text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.77);   
+}
+#a1 {
+    position:absolute;  left: -730px; top: -65px;
+}
+#a2 {
+    position:absolute;  left: -730px; top: -85px;
+}
+#a3 {
+    position:absolute;  left: -730px; top: -25px;
+}
+#a4 {
+    position:absolute;  left: -730px; top: -20px;
+}
+#a5 {
+    position:absolute;  left: -190px; top: -130px; z-index:2;
+}
+#a7 {
+    position:absolute;  left: -730px; top: -70px; z-index:2;
+}
+.imglink_a:hover {
+font-weight: bold;
+}
+.imglink_a:focus {
+font-weight: bold;
+}
+
+/*דף לא פותח*/
+#notdevolped_main {
+width: 760px; height: auto; 
+    margin: 0px auto; padding: 0px 0px;
+    margin-bottom: 20px; 
+}
+
+#notdevolped_main h1 {
+  font-family:dana_yad_alefalefalefnormal; font-size: 20pt;
+      -webkit-text-stroke: 1px black; margin-bottom: 20px;
+      letter-spacing: 1pt; text-align:center; margin-top: 40px;
+}
+#notdevolped_main p {
+   font-family: 'Varela Round'; color: black;
+    font-size:13pt; 
+    margin-bottom: 15px; text-align:center;
+    line-height: 20pt;
+}
+
+#notdevolped_main img {
+   width: 500px; margin-right:120px;
+   
+}
+#notdevolped_main a {
+    color:black;
+}
+
+
+/*scrolling*/
+.scrollnow {
+    background-color: rgba(255, 255, 255, 0.89) !important;
+-webkit-border-radius: 7px 7px 7px 7px;
+border-radius: 7px 7px 7px 7px;
+}
