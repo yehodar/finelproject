@@ -784,7 +784,7 @@ font-weight: bold; border: 1px solid yellow;
 .innerpage_right_menu {
     background-color: #FFB85F;
     width: 150px; height: 350px;
-     position:fixed; top: 150px; right: 50px;
+     position:fixed; top: 180px; right: 250px;
    /* margin-right: 342px; margin-top: 80px;*/
 
    
