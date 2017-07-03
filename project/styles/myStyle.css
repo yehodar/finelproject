@@ -513,12 +513,12 @@ display: block; width: 120px; height: 130px;
 
 .s2_lobby_box a:hover  {
 -webkit-box-shadow: 0 0 10px 1px #A14093;
-box-shadow: 0 0 10px 1px #D35E07;
+box-shadow: 0 0 10px 1px white;
 font-weight:bold;
 }
 .s2_lobby_box a:focus  {
 -webkit-box-shadow: 0 0 10px 1px #A14093;
-box-shadow: 0 0 10px 1px #D35E07;
+box-shadow: 0 0 10px 1px white;
 font-weight:bold;
 }
 /*ãó ìåáé 2 - îìáï òí ëåúøú åàéé÷åï ì÷åôñú úåëï - îñôø 1*/
