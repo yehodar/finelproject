@@ -772,14 +772,21 @@ font-weight: bold;
 .breadcrumbs ul li a:focus {
 font-weight: bold; border: 1px solid yellow;
 }
+
+
+
+
+
+
+
 /*úôøéè ðéååè áöã òîåã ôðéîé*/
 
 .innerpage_right_menu {
     background-color: #FFB85F;
     width: 150px; height: 350px;
-     position:fixed;
-    margin-right: 342px; margin-top: 80px;
-    /*position: fixed; top: 50px; right: 0px;*/
+     position:fixed; top: 150px; right: 50px;
+   /* margin-right: 342px; margin-top: 80px;*/
+
    
     
 }
