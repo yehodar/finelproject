@@ -1,6 +1,6 @@
 ﻿function playdorbell() {
    
-       var audio = new Audio("finelproject/project/sounds/Doorbell.mp3");
+       var audio = new Audio(".../project/sounds/Doorbell.mp3");
          audio.play();
    
     setTimeout(function () { window.location.href = "index.html"; }, 1400);
