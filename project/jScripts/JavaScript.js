@@ -5,6 +5,13 @@
    
     setTimeout(function () { window.location.href = "index.html"; }, 1400);
 }
+﻿function playdorbell2() {
+   
+       var audio = new Audio("/finelproject/project/sounds/Doorbell.mp3");
+         audio.play();
+   
+    setTimeout(function () { window.location.href = "../index.html"; }, 1400);
+}
 var opentable_status = 0;
 function opentable() {
     if (opentable_status == 0) {
