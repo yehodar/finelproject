@@ -1181,4 +1181,5 @@ border-radius: 7px 7px 7px 7px;
 
 #animation_container {
     margin: 30px auto; 
+    direction:rtl;
 }
