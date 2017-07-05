@@ -1175,3 +1175,10 @@ width: 760px; height: auto;
 -webkit-border-radius: 7px 7px 7px 7px;
 border-radius: 7px 7px 7px 7px;
 }
+
+
+/*ייצוג אינטרקטיבי*/
+
+#animation_container {
+    margin: 30px auto; 
+}
